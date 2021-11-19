@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PTT</title>
+    <meta charset="UTF-8">
+    <style>
+        .box {
+            width: 50%;
+            height: 100px;
+            background: rgb(168, 66, 66);
+        }
+        .box:active{
+            background-color: rgb(142, 7, 253);
+        }
+        .box::after {
+            content: attr(data-title);
+        }
+        h1:hover{
+            color: red;
+        }
+        a::after {
+            content: " (" attr(href) ")";
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box" title="Để đây cho bị chửi"></div>
+    <h1>PTT làm khùng làm điên</h1>
+    <a href="facebook.com">PTT</a>
+    <!--Lớp giả
+        Search CSS pseudo-classes
+    -->
+
+</body>
+</html>
